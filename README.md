@@ -78,3 +78,51 @@ A minimal, text-adventure themed website to showcase small web-based projects an
 
 **Highlights:**
 - A dark/light mode toggle that initializes based on the device color scheme (system-wide dark/light mode), then saves the toggled state in local storage for future visits
+
+### txxt.club
+
+<img src="images/txxt.jpg" alt="" width="250">
+
+An image and text microblog that my friends and I can post to via SMS
+
+[Code Repository](https://github.com/palomakop/txxt-bridge)
+
+**Tools used:**
+- [Twilio](https://twilio.com) serverless function running [Node.js](https://nodejs.org/en)
+  - Twilio provides a phone number to receive incoming SMS, and an API for launching a function when a new message is received and sending outgoing SMS
+- [WriteFreely](https://writefreely.org/), an open-source blog platform with an API
+  - The WriteFreely instance, hosted on my server, provides the front-end blog site, as well as an RSS feed and ActivityPub stream
+- [ImgBB](https://api.imgbb.com/), an image hosting service with an API
+
+**Highlights:**
+- I wrote a bridge that takes incoming SMS text and image messages and posts them to the WriteFreely blog
+- It also replies via SMS with the blog URL once the new post is created
+- There is no authentication, but only people who know the phone number can post, so it is shared only by word of mouth
+- Can accept messages with multiple attachments, and will include all image attachments in the blog post
+- Text-only posts are also supported
+- When the Twilio phone number is called, it plays an audio message with instructions for posting to the blog
+
+## Work Projects
+
+### Mediary
+
+A web app for video producers and editors at Paramount to launch and manage file-based workflow automations
+
+**Tools used:**
+- JavaScript front-end
+- RESTful API microservices built with [Flask](https://flask.palletsprojects.com/en/stable/)
+- Custom integrations with external vendor APIs and enterprise software products
+  - [IBM Aspera Orchestrator](https://www.ibm.com/community/101/ibm-aspera-101/ibm-aspera-orchestrator/)
+  - [AWS Elemental MediaConvert](https://aws.amazon.com/mediaconvert/)
+  - [Rev Transcription and Caption API](https://www.rev.com/api)
+  - [SyncWords API](https://www.syncwords.com/)
+  - [TeleStream Vantage](https://www.telestream.com/vantage/) and [ContentAgent](https://www.telestream.net/ContentAgent/overview.htm)
+
+**Highlights:**
+- I built a custom Flask API that allowed Mediary users to seamlessly interchangeably order captions from multiple vendor options
+  - Our captioning vendors each had their own uniquie APIs and configuration options. The universal caption API I built allowed a caption order to be placed to any of these vendors using a normalized payload
+- I built an integration with AWS Elemental MediaConvert that allowed Mediary users to launch jobs to AWS's cloud-based media encoding service
+  - Previously, all of our media encoding was done with on-premises hardware; this integration helped transiton the department's infrastructure dependencies to the cloud
+- I developed a unified template for all workflows to follow, improving consistency and maintainability
+- I also created detailed documentation for all the projects listed above
+- My team oversaw the transition of the Mediary app and its users to fully remote, cloud-based workflows, allowing them to seamlessly continue their work at the start of the pandemic

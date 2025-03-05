@@ -116,11 +116,13 @@ A web app for video producers and editors at Paramount to launch and manage file
   - [AWS Elemental MediaConvert](https://aws.amazon.com/mediaconvert/)
   - [Rev Transcription and Caption API](https://www.rev.com/api)
   - [SyncWords API](https://www.syncwords.com/)
+  - [3play Media Api](https://www.3playmedia.com/services/features/for-developers/)
+  - [Emotion Systems Engine](https://www.emotion-systems.com/products/engine/)
   - [TeleStream Vantage](https://www.telestream.com/vantage/) and [ContentAgent](https://www.telestream.net/ContentAgent/overview.htm)
 
 **Highlights:**
-- I built a custom Flask API that allowed Mediary users to seamlessly interchangeably order captions from multiple vendor options
-  - Our captioning vendors each had their own uniquie APIs and configuration options. The universal caption API I built allowed a caption order to be placed to any of these vendors using a normalized payload
+- I built a custom Flask API that allowed Mediary users to interchangeably order captions from an array of vendor options
+  - Each of our captioning vendors had their own unique API and configuration options. The universal caption API I built allowed a caption order to be placed to any of these vendors using a normalized payload
 - I built an integration with AWS Elemental MediaConvert that allowed Mediary users to launch jobs to AWS's cloud-based media encoding service
   - Previously, all of our media encoding was done with on-premises hardware; this integration helped transiton the department's infrastructure dependencies to the cloud
 - I developed a unified template for all workflows to follow, improving consistency and maintainability

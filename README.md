@@ -2,6 +2,29 @@
 
 *A list of my technical projects, and the tools used to create them*
 
+## Subtle Cards
+
+<img src="images/subtle-cards.jpg" alt="" width="250">
+
+A full-stack app for pulling spreads of tarot cards, built with React and Flask. Still a work in progress! 🌝
+
+[Frontend Repo](https://github.com/palomakop/palomakop.tv-11ty) | [Backend Repo](https://palomakop.tv) | [Live Demo](https://subtle.cards)
+
+**Tools used:**
+- The frontend runs on React.js and is written in Typescript. It uses [React Router](https://reactrouter.com/) in framework mode, and the [Tailwind](https://tailwindcss.com/) CSS framework
+- The frontend builds & deploys via [Netlify](https://www.netlify.com/) with each new commit to the Github repo
+- The backend is a REST API built with [Flask](https://flask.palletsprojects.com/en/stable/) in Python, and is deployed to Heroku
+- The database runs on [Supabase](https://supabase.com/)
+- True random numbers for the card selection powered by the Random.org API
+- Tarot card images processed with [Imagemagick](https://imagemagick.org/)
+
+**Highlights:**
+- Every tarot pull gets a unique URL that can be shared with others
+- Light/dark themes controlled by device theme (with favicon variations)
+- Dynamic emoji shows current moon phase, and the moon phase at the time of each tarot pull
+- Page transition animations created with the handy new browser standard [View Transition API](https://developer.chrome.com/docs/web-platform/view-transitions) (now supported in Chrome and Safari, Firefox implementation in progress)
+
+
 ## Personal Website
 
 <img src="images/personal-website.jpg" alt="" width="250">

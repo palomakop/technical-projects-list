@@ -6,7 +6,7 @@
 
 <img src="images/subtle-cards.jpg" alt="" width="250">
 
-A full-stack app for pulling spreads of tarot cards, built with React and Flask. Still a work in progress! 🌝
+A full-stack app for pulling spreads of tarot cards, built with React and Flask.
 
 [Frontend Repo](https://github.com/palomakop/palomakop.tv-11ty) | [Backend Repo](https://palomakop.tv) | [Live Demo](https://subtle.cards)
 

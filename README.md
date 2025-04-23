@@ -11,7 +11,7 @@ A full-stack app for pulling spreads of tarot cards, built with React and Flask.
 [Frontend Repo](https://github.com/palomakop/palomakop.tv-11ty) | [Backend Repo](https://palomakop.tv) | [Live Demo](https://subtle.cards)
 
 **Tools used:**
-- The frontend runs on React.js and is written in Typescript. It uses [React Router](https://reactrouter.com/) in framework mode, and the [Tailwind](https://tailwindcss.com/) CSS framework
+- The frontend runs on React.js and is written in TypeScript. It uses [React Router](https://reactrouter.com/) in framework mode, and the [Tailwind](https://tailwindcss.com/) CSS framework
 - The frontend builds & deploys via [Netlify](https://www.netlify.com/) with each new commit to the Github repo
 - The backend is a REST API built with [Flask](https://flask.palletsprojects.com/en/stable/) in Python, and is deployed to Heroku
 - The database runs on [Supabase](https://supabase.com/)
